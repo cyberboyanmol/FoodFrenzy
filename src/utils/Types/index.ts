@@ -1,11 +1,11 @@
-import {StackScreenProps} from '@react-navigation/stack';
+import type {StackScreenProps} from '@react-navigation/stack';
 import {
   OnboardingStackScreenName,
   HomeStackScreenName,
   RootStackScreenName,
   HomeTabScreenName,
 } from './enum';
-import {
+import type {
   CompositeScreenProps,
   NavigatorScreenParams,
 } from '@react-navigation/native';

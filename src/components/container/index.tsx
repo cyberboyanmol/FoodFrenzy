@@ -18,7 +18,7 @@ interface StatusBarProps {
 const Container: FC<ContainerProps> = ({
   children,
   disableFirst,
-  translucent,
+  translucent = false,
   disableLast,
   statusBarProps,
 }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, TextStyle, StyleProp, StyleSheet} from 'react-native';
 import {Colors} from '../../constants';
-import {setYAxisValue} from '../../utils';
+import {setValue, setYAxisValue} from '../../utils';
 
 export const FontWeights = {
   100: 'SofiaPro-UltraLight',
@@ -28,7 +28,7 @@ export const FontSizes = {
 };
 
 interface TextFieldProps {
-  children: string;
+  children: React.ReactNode | string;
   fontWeight?: keyof typeof FontWeights;
   fontSize?: keyof typeof FontSizes | number;
   color?: string;
@@ -51,7 +51,7 @@ const TextField: React.FC<TextFieldProps> = ({
   ...restProps
 }) => {
   const size: number =
-    typeof fontSize === 'number' ? fontSize : FontSizes[fontSize];
+    typeof fontSize === 'number' ? setValue(fontSize) : FontSizes[fontSize];
 
   const textStyles = {
     fontFamily: FontWeights[fontWeight],

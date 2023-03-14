@@ -6,7 +6,7 @@ import {Images} from '../../constants';
 const Loading = () => {
   return (
     <Container
-      translucent
+      translucent={true}
       disableFirst
       disableLast
       statusBarProps={{barStyle: 'light-content'}}>
