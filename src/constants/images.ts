@@ -6,4 +6,5 @@ export const Images = {
   LEFT_ARROW: require('../assets/images/chevron-left.png'),
   EYE_ON: require('../assets/images/eye-on.png'),
   EYE_OFF: require('../assets/images/eye-off.png'),
+  CLOSE_ICON: require('../assets/images/close-circle.png'),
 };

@@ -10,6 +10,7 @@ import {
   OnboardingStackScreenProps,
   setYAxisValue,
 } from '../../utils';
+
 const Onboarding: React.FC<
   OnboardingStackScreenProps<OnboardingStackScreenName.Onboarding>
 > = ({navigation}) => {
@@ -43,7 +44,7 @@ const Onboarding: React.FC<
           style={styles.welcomeTxt}
           fontSize={'h1'}
           fontWeight={800}>
-          FoodHub
+          Food Frenzy
         </TextField>
 
         <View style={styles.slogan}>

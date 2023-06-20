@@ -1,6 +1,13 @@
 import React, {useState} from 'react';
 import {TouchableOpacity, Image, View} from 'react-native';
-import {BackButton, Container, InputField, TextField} from '../../components';
+import {
+  ActivityIndicatorModal,
+  BackButton,
+  Container,
+  ErrorModal,
+  InputField,
+  TextField,
+} from '../../components';
 import styles from './styles';
 import {
   OnboardingStackScreenName,
@@ -103,6 +110,7 @@ const LogIn: React.FC<
           </TouchableOpacity>
         </View>
       </KeyboardAwareScrollView>
+      {/*ActivityIndicator and ErrorModal if any arror occur in future  */}
     </Container>
   );
 };

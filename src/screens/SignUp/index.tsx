@@ -4,6 +4,7 @@ import {ActivityIndicatorModal, Container} from '../../components';
 const SignUp = () => {
   return (
     <Container translucent>
+      {/* <ErrorModal /> */}
       <ActivityIndicatorModal />
       {/* <Text>hello from SignUp</Text> */}
     </Container>

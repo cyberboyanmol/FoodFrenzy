@@ -5,12 +5,11 @@
 // AnimatedAppNavigation ->AppNavigation->HomSatck
 
 // OnboardingStack->
-// Onboarding
-// Login
+// Onboarding-done
+// Login->done
 // SignUp
 // OTPVerification
 // ResetPassword
-// PhoneNumber
 // SignUpRole
 // SignUpRestaurant
 
